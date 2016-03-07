@@ -1,0 +1,24 @@
+﻿/*Blox-Grid Version: 1.0.1 by I am BlocksBerg*/
+*, *:before, *:after { box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; }
+.col { width:100%; float: left; }
+._maxwidth { max-width: 1140px; width: 90%; margin: 0 auto; }
+._unfloat:before, ._unfloat:after { content: " "; display: table; }
+._unfloat:after { clear: both; }
+._unfloat { *zoom: 1; }
+
+@media screen and (min-width: 480px){
+	.col.-four { width: 50%; }
+}
+
+@media screen and (min-width: 768px){
+	.col.-one { width:100%; }
+	.col.-two { width: 50%; }
+	.col.-two-in-three { width: 66.67%; }
+	.col.-three { width: 33.33%; }
+	.col.-four { width: 33.33%; }
+	.col._right { float: right; }
+}
+
+@media screen and (min-width: 1024px){
+	.col.-four { width: 25%; }
+}
