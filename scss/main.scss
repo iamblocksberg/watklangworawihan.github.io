@@ -67,11 +67,23 @@ body {
 	}
 }
 
+._fade {
+	opacity: 0;
+	-moz-transition: opacity 2s ease;
+	-webkit-transition: opacity 2s ease;
+ 	-o-transition: opacity 2s ease;
+  	transition: opacity 2s ease;
+}
+
+._fade.-in {
+	opacity: 1;
+}
+
 
 
 //Header
 
-$header-height: 400px;
+$header-height: 500px;
 
 .header {
 	width: 100%;
