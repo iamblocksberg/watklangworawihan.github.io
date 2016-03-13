@@ -32,7 +32,7 @@ body {
   background-color: #fff;
   font-size: 18px;
   font-family: 'boon', sans-serif;
-  padding-top: 50px;
+  padding-top: 60px;
 }
 
 nav, h2, h3, footer {
@@ -120,8 +120,8 @@ h2 {
 
 nav .navbar-toggle {
   padding: 4px 10px;
-  margin-top: 7px;
-  margin-bottom: 7px;
+  margin-top: 13px;
+  margin-bottom: 13px;
 }
 
 .navbar-default {
@@ -150,7 +150,7 @@ nav, .navbar-brand {
 
 .header, .header-img-1, .header-img-2, .header-img-3 {
   width: 100%;
-  height: 460px;
+  height: calc(100vh - 60px);
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #222;
@@ -169,7 +169,7 @@ nav, .navbar-brand {
 }
 
 .carousel {
-  height: 460px;
+  height: calc(100vh - 60px);
 }
 
 .carousel-caption {
@@ -177,7 +177,7 @@ nav, .navbar-brand {
 }
 
 .carousel .item {
-  height: 460px;
+  height: calc(100vh - 60px);
   background-color: #222;
 }
 
@@ -186,7 +186,7 @@ nav, .navbar-brand {
   top: 0;
   left: 0;
   min-width: 100%;
-  min-height: 460px;
+  min-height: calc(100vh - 60px);
 }
 
 .container .jumbotron {

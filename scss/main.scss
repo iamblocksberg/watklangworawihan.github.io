@@ -9,6 +9,8 @@ $bg-color: #fff;
 $main-padding: 30px;
 $min-padding: 10px;
 
+$nav-height: 60px;
+
 ::selection {
 	background-color: $main-color;
 	color: #fff;
@@ -43,7 +45,7 @@ body {
 	background-color: #fff;
 	font-size: 18px;
 	font-family: 'boon', sans-serif;
-	padding-top: 50px;
+	padding-top: $nav-height;
 }
 
 nav, h2, h3, footer {
@@ -136,8 +138,8 @@ nav, h2, h3, footer {
 nav {
 	.navbar-toggle {
 		padding: 4px 10px;
-		margin-top: 7px;
-		margin-bottom: 7px;
+		margin-top: 13px;
+		margin-bottom: 13px;
 	}
 }
 
@@ -147,7 +149,7 @@ nav {
 }
 
 nav, .navbar-brand {
-	height: 60px;
+	height: $nav-height;
 }
 
 .nav > li > a {
@@ -172,7 +174,7 @@ nav, .navbar-brand {
 
 //Header
 
-$header-height: 460px;
+$header-height: calc(100vh - 60px);
 
 .header {
 	width: 100%;
