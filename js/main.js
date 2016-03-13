@@ -23,7 +23,12 @@ function doFade(){
 }
 
 jQuery(window).scroll(function(event) {
-	doFade();  
+	doFade();
+
+	if ($('._fade-scroll').visible(true)) {
+      $('._fade-scroll').addClass("-in"); 
+    }
+
 });
 
 doFade();
