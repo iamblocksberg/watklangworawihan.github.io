@@ -146,12 +146,20 @@ nav {
 	//border-color: transparent;
 }
 
-nav a {
-	font-size: 22px;
+nav, .navbar-brand {
+	height: 60px;
+}
+
+.nav > li > a {
+	font-size: 26px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
 .navbar-brand {
-	font-size: 28px;
+	font-size: 30px;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
 .dropdown-menu> li > a {
