@@ -352,4 +352,10 @@ nav, .navbar-brand {
     text-align: left;
     padding-left: 70px;
   }
+  ._height-full-tablet {
+    height: 100vh;
+  }
+  ._padding-top-6-tablet {
+    padding-top: 60px;
+  }
 }

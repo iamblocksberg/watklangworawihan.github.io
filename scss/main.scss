@@ -409,6 +409,7 @@ $space-padding: 70px;
 	}
 }
 
+//Tablet
 @media screen and (min-width: 768px){
 
 	.dropdown:hover .dropdown-menu {
@@ -434,7 +435,15 @@ $space-padding: 70px;
 			
 		}
 	}
-	
+
+	._height-full-tablet {
+		height: 100vh;
+	}
+
+	._padding-top-6-tablet {
+		padding-top: 60px;
+	}
+
 }
 
 //End Screen
