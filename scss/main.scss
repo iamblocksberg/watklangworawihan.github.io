@@ -3,7 +3,8 @@ $main-color: #222;
 $sec-color: #999;
 $third-color: #ddd;
 $four-colot: #f0f0f0;
-$link-color: #222;
+$link-color: #555;
+$link-color-hover: #999;
 $bg-color: #fff;
 
 $main-padding: 30px;
@@ -143,23 +144,34 @@ nav {
 	}
 }
 
+nav, .navbar-brand {
+	height: $nav-height;
+}
+
 .navbar-default {
 	background-color: #fff;
 	//border-color: transparent;
 }
 
-nav, .navbar-brand {
-	height: $nav-height;
+.navbar-default {
+
+	.navbar-nav > li > a {
+		color: $link-color;
+		&:hover {
+			color: $link-color-hover;
+		}
+	}
+
+	.navbar-brand {
+		color: $link-color;
+		font-size: 30px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
 }
 
 .nav > li > a {
 	font-size: 26px;
-	padding-top: 20px;
-	padding-bottom: 20px;
-}
-
-.navbar-brand {
-	font-size: 30px;
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
@@ -442,6 +454,14 @@ $space-padding: 70px;
 
 	._padding-top-6-tablet {
 		padding-top: 60px;
+	}
+
+	._padding-top-0-tablet {
+		padding-top: 0;
+	}
+
+	._margin-top-0-tablet {
+		margin-top: 0;
 	}
 
 }

@@ -124,22 +124,31 @@ nav .navbar-toggle {
   margin-bottom: 13px;
 }
 
-.navbar-default {
-  background-color: #fff;
-}
-
 nav, .navbar-brand {
   height: 60px;
 }
 
-.nav > li > a {
-  font-size: 26px;
+.navbar-default {
+  background-color: #fff;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #555;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+  color: #999;
+}
+
+.navbar-default .navbar-brand {
+  color: #555;
+  font-size: 30px;
   padding-top: 20px;
   padding-bottom: 20px;
 }
 
-.navbar-brand {
-  font-size: 30px;
+.nav > li > a {
+  font-size: 26px;
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -357,5 +366,11 @@ nav, .navbar-brand {
   }
   ._padding-top-6-tablet {
     padding-top: 60px;
+  }
+  ._padding-top-0-tablet {
+    padding-top: 0;
+  }
+  ._margin-top-0-tablet {
+    margin-top: 0;
   }
 }
