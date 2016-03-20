@@ -57,6 +57,10 @@ nav, h2, h3, footer {
  	font-size: 35px;
  }
 
+.text-content {
+	font-size: 19px;
+}
+
 .descript {
 	font-size: 19px;
 }
@@ -85,6 +89,11 @@ nav, h2, h3, footer {
 ._padding-top-down {
 	padding-top: 60px;
 	padding-bottom: 60px;
+}
+
+._margin-v-2 {
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 
 ._vpadding-3 {
@@ -187,11 +196,12 @@ nav, .navbar-brand {
 
 //Header
 
-$header-height: calc(100vh - 60px);
+$header-height: calc(100vh - 60px - 191px);
 
 .header {
 	width: 100%;
 	height: $header-height;
+	max-height: 500px;
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-color: $main-color;
