@@ -171,12 +171,13 @@ nav, .navbar-brand {
   height: calc(100vh - 60px - 191px);
   max-height: 500px;
   background-size: cover;
+  background-position: center center;
   background-repeat: no-repeat;
-  background-color: #222;
+  background-color: #fff;
 }
 
 .header-img-1 {
-  background-image: url(../image/photo1.jpg);
+  background-image: url(../image/header1.jpg);
 }
 
 .header-img-2 {
@@ -197,7 +198,6 @@ nav, .navbar-brand {
 
 .carousel .item {
   height: calc(100vh - 60px - 191px);
-  background-color: #222;
 }
 
 .carousel-inner > .item > img {

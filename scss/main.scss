@@ -203,13 +203,14 @@ $header-height: calc(100vh - 60px - 191px);
 	height: $header-height;
 	max-height: 500px;
 	background-size: cover;
+	background-position: center center;
 	background-repeat: no-repeat;
-	background-color: $main-color;
+	background-color: #fff;
 }
 
 .header-img-1 {
 	@extend .header;
-	background-image: url(../image/photo1.jpg);
+	background-image: url(../image/header1.jpg);
 }
 
 .header-img-2 {
@@ -233,7 +234,6 @@ $header-height: calc(100vh - 60px - 191px);
 
 .carousel .item {
 	height: $header-height;
-	background-color: $main-color;
 }
 .carousel-inner > .item > img {
 	position: absolute;
