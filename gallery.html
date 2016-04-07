@@ -29,6 +29,8 @@
 	    <script type="text/javascript">
 			$(document).ready(function() {
 
+				//var arrayTitle = ['ไตเติล1', 'ไตเติล2', 'ไตเติล3', 'ไตเติล4', 'ไตเติล5', 'ไตเติล6', 'ไตเติล7', 'ไตเติล8', 'ไตเติล9', 'ไตเติล10', 'ไตเติล11', 'ไตเติล12', 'ไตเติล13', 'ไตเติล14', 'ไตเติล15', 'ไตเติล16'];
+
 				$('.fancybox-buttons').fancybox({
 					openEffect  : 'fade',
 					closeEffect : 'fade',
@@ -46,7 +48,8 @@
 					},
 
 					afterLoad : function() {
-						this.title = 'Image ' + (this.index + 1) + ' of ' + this.group.length + (this.title ? ' - ' + this.title : '');
+						//this.title = 'Image ' + (this.index + 1) + ' of ' + this.group.length + (this.title ? ' - ' + this.title : '');
+						//this.title = arrayTitle[this.index];
 					}
 				});
 
@@ -98,6 +101,7 @@
 			
 			<div id="box-galery" class="row box-galery">
 				
+				<div class="-list col-sm-4 col-md-2"><a class="fancybox-buttons" data-fancybox-group="button" href="image/gallery/16.jpg"><img class="_shadow-all-pad" src="image/gallery/thumb-16.jpg" alt="" /></a></div>
 				<div class="-list col-sm-4 col-md-2"><a class="fancybox-buttons" data-fancybox-group="button" href="image/gallery/01.jpg"><img class="_shadow-all-pad" src="image/gallery/thumb-01.jpg" alt="" /></a></div>
 				<div class="-list col-sm-4 col-md-2"><a class="fancybox-buttons" data-fancybox-group="button" href="image/gallery/02.jpg"><img class="_shadow-all-pad" src="image/gallery/thumb-02.jpg" alt="" /></a></div>
 				<div class="-list col-sm-4 col-md-2"><a class="fancybox-buttons" data-fancybox-group="button" href="image/gallery/03.jpg"><img class="_shadow-all-pad" src="image/gallery/thumb-03.jpg" alt="" /></a></div>
@@ -113,7 +117,6 @@
 				<div class="-list col-sm-4 col-md-2"><a class="fancybox-buttons" data-fancybox-group="button" href="image/gallery/13.jpg"><img class="_shadow-all-pad" src="image/gallery/thumb-13.jpg" alt="" /></a></div>
 				<div class="-list col-sm-4 col-md-2"><a class="fancybox-buttons" data-fancybox-group="button" href="image/gallery/14.jpg"><img class="_shadow-all-pad" src="image/gallery/thumb-14.jpg" alt="" /></a></div>
 				<div class="-list col-sm-4 col-md-2"><a class="fancybox-buttons" data-fancybox-group="button" href="image/gallery/15.jpg"><img class="_shadow-all-pad" src="image/gallery/thumb-15.jpg" alt="" /></a></div>
-				<div class="-list col-sm-4 col-md-2"><a class="fancybox-buttons" data-fancybox-group="button" href="image/gallery/16.jpg"><img class="_shadow-all-pad" src="image/gallery/thumb-16.jpg" alt="" /></a></div>
 
 			</div>
 
