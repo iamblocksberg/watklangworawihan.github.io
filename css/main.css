@@ -235,12 +235,15 @@ nav, .navbar-brand {
   width: 100%;
 }
 
-.box-galery .-item {
-  margin-bottom: 30px;
+.box-galery .-list {
+  box-sizing: border-box;
+  padding: 10px;
 }
 
-.box-galery img {
+.box-galery .fancybox-buttons img {
+  display: block;
   width: 100%;
+  padding: 10px;
 }
 
 .box-schedule {
