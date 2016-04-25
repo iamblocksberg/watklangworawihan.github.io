@@ -124,9 +124,13 @@ nav, .navbar-brand {
 
 $header-height: calc(100vh - 60px - 135px);
 
+.head-img {
+	width: 100%;
+}
+
 .header {
 	width: 100%;
-	height: $header-height;
+	//height: $header-height;
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
@@ -150,7 +154,7 @@ $header-height: calc(100vh - 60px - 135px);
 
 //--Slide
 .carousel {
-	height: $header-height;
+	//height: $header-height;
 }
 
 .carousel-caption {
@@ -158,14 +162,14 @@ $header-height: calc(100vh - 60px - 135px);
 }
 
 .carousel .item {
-	height: $header-height;
+	//height: $header-height;
 }
 .carousel-inner > .item > img {
 	position: absolute;
 	top: 0;
 	left: 0;
 	min-width: 100%;
-	min-height: $header-height;
+	//min-height: $header-height;
 }
 
 //End Header

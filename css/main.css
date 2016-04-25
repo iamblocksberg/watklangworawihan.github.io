@@ -91,9 +91,12 @@ nav, .navbar-brand {
   font-size: 20px;
 }
 
+.head-img {
+  width: 100%;
+}
+
 .header, .header-img-1, .header-img-2, .header-img-3 {
   width: 100%;
-  height: calc(100vh - 60px - 135px);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -112,16 +115,8 @@ nav, .navbar-brand {
   background-image: url(../image/photo3.jpg);
 }
 
-.carousel {
-  height: calc(100vh - 60px - 135px);
-}
-
 .carousel-caption {
   z-index: 10;
-}
-
-.carousel .item {
-  height: calc(100vh - 60px - 135px);
 }
 
 .carousel-inner > .item > img {
@@ -129,7 +124,6 @@ nav, .navbar-brand {
   top: 0;
   left: 0;
   min-width: 100%;
-  min-height: calc(100vh - 60px - 135px);
 }
 
 .container {
