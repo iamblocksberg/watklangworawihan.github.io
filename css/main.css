@@ -185,6 +185,7 @@ nav, .navbar-brand {
 }
 
 .buddha-statue .-shadow {
+  background-color: #fff;
   padding: 10px;
 }
 
@@ -326,6 +327,10 @@ nav, .navbar-brand {
 
 #schd-popup-page .-content .img-head img {
   width: 100%;
+}
+
+.box-contact {
+  background-color: #fff;
 }
 
 .box-contact h3 {
