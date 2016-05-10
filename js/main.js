@@ -15,7 +15,7 @@ $(document).ready(function(){
 	$('.box-schedule').click(function(){
 		//Show Box
 		$('#schd-popup-page').fadeIn();
-		//$('body').css('overflow', 'hidden');
+		$('body').css('overflow', 'hidden');
 		//$('#schd-popup-page').css('overflow-y', 'scroll');
 
 		//Load and Show Data
@@ -43,7 +43,7 @@ $(document).ready(function(){
 	//Fade Out
 	$('#schd-popup-page, .btn-close-poppage').click(function(){
 		$('#schd-popup-page').fadeOut();
-		//$('body').css('overflow', 'auto');
+		$('body').css('overflow', 'auto');
 	});
 
 	$('#schd-popup-page .container').click(function(event){
@@ -78,3 +78,40 @@ jQuery(window).scroll(function(event) {
 });
 
 doFade();
+
+//Delete Cookie
+/*
+function deleteAllCookies() {
+
+	setTimeout(function(){
+
+	document.cookie = "_ga=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
+	document.cookie = "_gat=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
+
+	// var cookies = document.cookie.split(";");
+
+ //    for (var i = 0; i < cookies.length; i++) {
+ //    	var cookie = cookies[i];
+ //    	var eqPos = cookie.indexOf("=");
+ //    	var name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
+ //    	document.cookie = name + "=;expires=Thu, 01 Jan 1970 00:00:00 GMT";
+ //    }
+
+		// // This function will attempt to remove a cookie from all paths.
+	 //    var pathBits = location.pathname.split('/');
+	 //    var pathCurrent = ' path=';
+
+	 //    // do a simple pathless delete first.
+	 //    document.cookie = name + '=; expires=Thu, 01-Jan-1970 00:00:01 GMT;';
+
+	 //    for (var i = 0; i < pathBits.length; i++) {
+	 //        pathCurrent += ((pathCurrent.substr(-1) != '/') ? '/' : '') + pathBits[i];
+	 //        document.cookie = name + '=; expires=Thu, 01-Jan-1970 00:00:01 GMT;' + pathCurrent + ';';
+	 //    }
+
+	    console.log("hi");
+
+    }, 5000);
+
+}
+*/

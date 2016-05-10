@@ -49,33 +49,35 @@ function showSchedule(){
 
 	for(var i = 0; i < schedule.length; i++){
 
-		var box_row = '<div id="' +i+ '" class="row lastSchedule box-schedule _fade _shadow">'+
-					'<div class="col-xs-12">'+
-					'<div class="col-sm-4 _bg-sec -image">'+
-						'<img src="image/schedule/schedule' +(i+1)+ '.jpg">'+
-					'</div>'+
-					'<div class="col-sm-8 -content">'+
-						'<div class="box-title">'+
-							'<div class="row">'+
-								'<div class="col-xs-6">'+
-									'<h1 class="-title">'
-										+schedule[i].name+
-									'</h1>'+
+		var box_row = 	'<div id="' +i+ '" class="row lastSchedule box-schedule _fade _shadow">'+
+							//'<div class="col-xs-12">'+
+								'<div class="col-sm-4 _bg-sec -image">'+
+									'<img src="image/schedule/schedule' +(i+1)+ '.jpg">'+
 								'</div>'+
-								'<p class="col-xs-6 small text-right">'+
-									'<span class="-date">'
-										+schedule[i].date+
-									'</span>'+
-								'</p>'+
+								'<div class="col-sm-8 -content">'+
+									'<div class="box-title">'+
+										//'<div class="row">'+
+											'<div class="col-xs-6 -title">'+
+												//'<h1 class="-title">'+
+													schedule[i].name+
+												//'</h1>'+
+											'</div>'+
+											'<div class="col-xs-6 small text-right -date">'+
+												//'<span class="">'+
+													schedule[i].date+
+												//'</span>'+
+											'</div>'+
+										//'</div>'+
 
-								'<p class="col-xs-12">'
-									+schedule[i].description+
-								'</p>'+
-							'</div>'+
-						'</div>'+
-					'</div>'+
-				'</div>'+
-			'</div>';
+										//'<div class="row">'+
+											'<div class="col-xs-12 -text">'
+												+schedule[i].description+
+											'</div>'+
+										//'</div>'+
+									'</div>'+
+								'</div>'+
+							//'</div>'+
+						'</div>';
 
 		schedule_container.innerHTML += box_row;
 	}
