@@ -1,5 +1,5 @@
 ::selection {
-  background-color: #222;
+  background-color: #313133;
   color: #fff;
 }
 
@@ -29,7 +29,7 @@ a:hover {
 }
 
 body {
-  background-color: #222;
+  background-color: #BFBCB8;
   font-size: 19px;
   font-family: 'boon', sans-serif;
   padding-top: 60px;
@@ -41,10 +41,6 @@ nav, h2, h3, footer {
 
 h2 {
   font-size: 35px;
-}
-
-nav > div {
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
 nav .navbar-toggle {
@@ -62,7 +58,7 @@ nav, .navbar-brand {
 }
 
 .navbar-default {
-  background-color: #222;
+  background-color: transparent;
   border: 0;
 }
 
@@ -127,15 +123,19 @@ nav, .navbar-brand {
 }
 
 .container {
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
   background-color: #f9f9f9;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
 .container .jumbotron {
   background-color: transparent;
   text-align: center;
   margin: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .container .jumbotron .-title {
@@ -143,6 +143,7 @@ nav, .navbar-brand {
 }
 
 .lastSchedule {
+  padding: 10px;
   background-color: #fff;
 }
 
@@ -171,11 +172,20 @@ nav, .navbar-brand {
 }
 
 .lastSchedule.-list .-content {
-  padding: 10px 10px 3px 40px;
+  padding: 10px 0;
 }
 
 .lastSchedule.-about .-content {
-  padding: 10px 10px 10px 25px;
+  padding: 0 10px;
+  padding-top: 10px;
+}
+
+.buddha-statue .-item {
+  margin-bottom: 25px;
+}
+
+.buddha-statue .-shadow {
+  padding: 10px;
 }
 
 .buddha-statue .-image img {
@@ -185,9 +195,8 @@ nav, .navbar-brand {
 .buddha-statue .-title {
   color: #fff;
   font-size: 17px;
-  background-color: #555;
+  background-color: #7F7E7A;
   padding: 20px;
-  margin-bottom: 25px;
 }
 
 .about-temple .-important p {
@@ -225,6 +234,7 @@ nav, .navbar-brand {
 
 .minimap {
   background-color: #FFF;
+  padding: 10px;
 }
 
 .minimap .-image {
@@ -240,7 +250,7 @@ nav, .navbar-brand {
   background-color: #FFF;
   display: block;
   width: 100%;
-  padding: 7px;
+  padding: 10px;
 }
 
 .box-schedule {
@@ -253,22 +263,28 @@ nav, .navbar-brand {
   overflow: hidden;
 }
 
-.box-schedule .-content .-title {
-  margin-top: 10px;
-  margin-left: 10px;
-  font-size: 22px;
-  font-weight: bold;
+.box-schedule .-content {
+  padding: 0;
 }
 
-.box-schedule .-content .box-title p {
+.box-schedule .-content .box-title {
   font-size: 18px;
   line-height: 27px;
-  padding: 0 10px 10px 25px;
+}
+
+.box-schedule .-content .-title {
+  font-size: 22px;
+  font-weight: bold;
+  padding: 10px 5px;
 }
 
 .box-schedule .-content .-date {
   color: #888;
-  padding-top: 10px;
+  padding: 10px 5px;
+}
+
+.box-schedule .-content .-text {
+  padding: 5px;
 }
 
 #schd-popup-page {
@@ -277,14 +293,15 @@ nav, .navbar-brand {
   width: 100%;
   height: 100%;
   position: fixed;
-  padding-top: 100px;
+  padding: 50px 0;
   top: 0;
   left: 0;
   z-index: 9999;
+  overflow-y: scroll;
 }
 
 #schd-popup-page .btn-close-poppage {
-  color: #222;
+  color: #313133;
   background-color: transparent;
   font-size: 20px;
   padding: 10px;
@@ -293,12 +310,13 @@ nav, .navbar-brand {
 }
 
 #schd-popup-page .container {
-  width: 80%;
+  width: 90%;
+  max-width: 960px;
 }
 
 #schd-popup-page .-content {
-  margin: 25px;
-  margin-top: 0;
+  padding: 20px;
+  padding-top: 0;
   padding-bottom: 20px;
 }
 
@@ -315,7 +333,8 @@ nav, .navbar-brand {
 }
 
 .box-contact .-content {
-  padding-top: 10px;
+  padding: 10px;
+  padding-bottom: 0;
 }
 
 .box-contact .-content p {
@@ -328,20 +347,34 @@ nav, .navbar-brand {
 
 .google-map {
   height: 370px;
+  padding: 10px;
 }
 
 .footer {
   width: 100%;
+  color: #fafafa;
+  font-family: 'boon';
 }
 
 .footer div {
-  background-color: #444;
+  background-color: #313133;
 }
 
 .footer .text-muted {
   font-size: 21px;
   color: #ccc;
   margin: 20px 0;
+}
+
+.footer .row {
+  padding-top: 20px;
+}
+
+.footer .row > div {
+  padding: 0 20px;
+  font-size: 17px;
+  line-height: 1.6em;
+  margin-bottom: 20px;
 }
 
 @media screen and (max-width: 767px) {
@@ -354,6 +387,16 @@ nav, .navbar-brand {
   .dropdown:hover .dropdown-menu {
     display: block;
   }
+  .container {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .lastSchedule.-list .-content {
+    padding: 10px 10px 3px 40px;
+  }
+  .lastSchedule.-about .-content {
+    padding: 10px 10px 10px 25px;
+  }
   .box-abbot .-image {
     position: absolute;
     right: 0;
@@ -362,6 +405,15 @@ nav, .navbar-brand {
   .box-abbot .-content {
     text-align: left;
     padding-left: 30px;
+  }
+  .box-schedule .-content .box-title {
+    padding: 0 10px 10px 25px;
+  }
+  .footer .row {
+    padding-top: 30px;
+  }
+  .footer .row > div {
+    margin-bottom: 30px;
   }
   ._height-full-tablet {
     height: 100vh;
@@ -390,7 +442,7 @@ nav, .navbar-brand {
 }
 
 ._bg-main {
-  background-color: #222;
+  background-color: #313133;
 }
 
 ._bg-sec {
@@ -407,6 +459,10 @@ nav, .navbar-brand {
 
 ._bg-white {
   background-color: #fff;
+}
+
+.line {
+  border-color: rgba(0, 0, 0, 0.1);
 }
 
 ._margin-0 {
@@ -485,7 +541,8 @@ nav, .navbar-brand {
 }
 
 ._hcenter {
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 ._fade, ._fade-scroll {
@@ -501,14 +558,17 @@ nav, .navbar-brand {
 }
 
 ._shadow {
-  padding-top: 15px;
-  padding-bottom: 15px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
 }
 
 ._shadow-all-pad {
   padding: 15px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+
+._shadow-no-pad, .buddha-statue .-shadow {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
 }
