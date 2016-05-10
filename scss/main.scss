@@ -1,5 +1,5 @@
 
-$main-color: #222;
+$main-color: #313133;
 $sec-color: #999;
 $third-color: #ddd;
 $four-colot: #eee;
@@ -7,8 +7,9 @@ $link-color: #555;
 $link-color-hover: #999;
 $bg-color: #fff;
 
-$main-padding: 30px;
-$min-padding: 10px;
+$main-padding: 20px;
+$sec-padding: 10px;
+$img-padding: 10px;
 
 $nav-height: 60px;
 
@@ -43,7 +44,7 @@ a:hover {
 }
 
 body {
-	background-color: $main-color;
+	background-color: #BFBCB8;
 	font-size: 19px;
 	font-family: 'boon', sans-serif;
 	padding-top: $nav-height;
@@ -57,14 +58,12 @@ nav, h2, h3, footer {
  	font-size: 35px;
  }
 
-
-
 //Nav
 
 nav {
 
 	& > div {
-		box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+		//box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 	}
 
 	.navbar-toggle {
@@ -83,7 +82,7 @@ nav, .navbar-brand {
 }
 
 .navbar-default {
-	background-color: $main-color;
+	background-color: transparent;
 	border: 0;
 }
 
@@ -179,14 +178,18 @@ $header-height: calc(100vh - 60px - 135px);
 //Content
 
 .container {
-	padding-left: 30px;
-	padding-right: 30px;
+	padding-left: $main-padding;
+	padding-right: $main-padding;
 	background-color: #f9f9f9;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+	-moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 
 	.jumbotron {
 		background-color: transparent;
 		text-align: center;
 		margin: 0;
+		padding-left: 0;
+		padding-right: 0;
 
 		.-title {
 			margin-bottom: 20px;
@@ -197,6 +200,7 @@ $header-height: calc(100vh - 60px - 135px);
 //--Last Schedule
 $schedule-height: 250px;
 .lastSchedule {
+	padding: $sec-padding;
 	background-color: #fff;
 
 	.-image {
@@ -230,20 +234,28 @@ $schedule-height: 250px;
 	}
 
 	.-content {
-		padding: 10px 10px 3px 40px;
+		padding: 10px 0;
 	}
 }
 
 .lastSchedule.-about {
 	.-content {
-		padding: 10px 10px 10px 25px;
+		padding: 0 10px;
+		padding-top: 10px;
 	}
 }
 
 //--Budha Statue
 .buddha-statue {
+
 	.-item {
 		//cursor: pointer;
+		margin-bottom: 25px;
+	}
+
+	.-shadow {
+		padding: $img-padding;
+		@extend ._shadow-no-pad;
 	}
 
 	.-item:hover .-image img {
@@ -251,7 +263,6 @@ $schedule-height: 250px;
 	}
 
 	.-image {
-
 		img {
 			width: 100%;
 		}
@@ -260,9 +271,8 @@ $schedule-height: 250px;
 	.-title {
 		color: #fff;
 		font-size: 17px;
-		background-color: #555;
+		background-color: #7F7E7A;
 		padding: 20px;
-		margin-bottom: 25px;
 	}
 }
 
@@ -309,6 +319,7 @@ $space-padding: 30px;
 .minimap {
 	//border: 5px solid #555;
 	background-color: #FFF;
+	padding: $sec-padding;
 
 	.-image {
 		width: 100%;
@@ -336,7 +347,7 @@ $space-padding: 30px;
 			background-color: #FFF;
 			display: block;
 			width: 100%;
-			padding: 7px;
+			padding: $img-padding;
 		}
 	}
 
@@ -348,6 +359,10 @@ $schedule-height: 230px;
 	//height: $schedule-height;
 	cursor: pointer;
 	margin: 0 0 30px 0;
+	
+	& > div {
+		//padding: $sec-padding;
+	}
 
 	.-image {
 		height: ($schedule-height - 30px);
@@ -357,23 +372,31 @@ $schedule-height: 230px;
 	.-content {
 		//height: ($schedule-height - 40px);
 		//overflow: hidden;
+		padding: 0;
 
-		.-title {
-			margin-top: 10px;
-			margin-left: 10px;
-			font-size: 22px;
-			font-weight: bold;
-		}
-
-		.box-title p {
+		.box-title {
 			font-size: 18px;
 			line-height: 27px;
-			padding: 0 10px 10px 25px;
+			//padding: $main-padding 0;
+			//padding: 0 10px 10px 25px;
+		}
+
+		.-title {
+			//margin-top: 10px;
+			//margin-left: 10px;
+			font-size: 22px;
+			font-weight: bold;
+			padding: $sec-padding 5px;
 		}
 
 		.-date {
 			color: #888;
-			padding-top: 10px;
+			//padding-top: 10px;
+			padding: $sec-padding 5px;
+		}
+
+		.-text {
+			padding: 5px;
 		}
 	}
 }
@@ -384,10 +407,12 @@ $schedule-height: 230px;
 	width: 100%;
 	height: 100%;
 	position: fixed;
-	padding-top: 100px;
+	//padding-top: 100px;
+	padding: 50px 0;
 	top: 0;
 	left: 0;
 	z-index: 9999;
+	overflow-y: scroll;
 
 	.btn-close-poppage {
 		color: $main-color;
@@ -399,12 +424,14 @@ $schedule-height: 230px;
 	}
 
 	.container {
-		width: 80%;
+		width: 90%;
+		max-width: 960px;
 	}
 
 	.-content {
-		margin: 25px;
-		margin-top: 0;
+		//margin: 25px;
+		padding: 20px;
+		padding-top: 0;
 		padding-bottom: 20px;
 
 		h2 {
@@ -425,7 +452,8 @@ $schedule-height: 230px;
 
 	.-content {
 		//line-height: 27px;
-		padding-top: 10px;
+		padding: $sec-padding;
+		padding-bottom: 0;
 
 		p {
 			font-size: 18px;
@@ -439,6 +467,7 @@ $schedule-height: 230px;
 
 .google-map {
 	height: 370px;
+	padding: $sec-padding;
 }
 
 //End Content
@@ -449,15 +478,28 @@ $schedule-height: 230px;
 
 .footer {
 	width: 100%;
+	color: #fafafa;
+	font-family: 'boon';
 
 	div {
-		background-color: #444;
+		background-color: $main-color;
 	}
 
 	.text-muted {
 		font-size: 21px;
 		color: #ccc;
 		margin: 20px 0;
+	}
+
+	.row {
+		padding-top: $main-padding;
+	}
+
+	.row > div {
+		padding: 0 $main-padding;
+		font-size: 17px;
+		line-height: 1.6em;
+		margin-bottom: $main-padding;
 	}
 }
 
@@ -480,10 +522,27 @@ $schedule-height: 230px;
 		display: block;
 	}
 
+	.container {
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+
 	.lastSchedule .-content {
 		//height: $schedule-height;
 		//padding-left: 50px;
 		//padding-right: 50px;
+	}
+
+	.lastSchedule.-list {
+		.-content {
+			padding: 10px 10px 3px 40px;
+		}
+	}
+
+	.lastSchedule.-about {
+		.-content {
+			padding: 10px 10px 10px 25px;
+		}
 	}
 
 	.box-abbot {
@@ -500,6 +559,28 @@ $schedule-height: 230px;
 		}
 	}
 
+	//Schedule
+	$schedule-height: 230px;
+	.box-schedule {
+		.-content {
+			.box-title {
+				padding: 0 10px 10px 25px;
+			}
+		}
+	}
+
+	//Footer
+	.footer {
+		.row {
+			padding-top: 30px;
+		}
+
+		.row > div {
+			margin-bottom: 30px;
+		}
+	}
+
+	//Properties
 	._height-full-tablet {
 		height: 100vh;
 	}
@@ -554,6 +635,10 @@ $schedule-height: 230px;
 
 ._bg-white {
 	background-color: #fff;
+}
+
+.line {
+	border-color: rgba(0, 0, 0, 0.1);
 }
 
 //Margin
@@ -638,7 +723,8 @@ $schedule-height: 230px;
 }
 
 ._hcenter {
-	margin: 0 auto;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 ._fade, ._fade-scroll {
@@ -654,14 +740,19 @@ $schedule-height: 230px;
 }
 
 ._shadow {
-	padding-top: 15px;
-	padding-bottom: 15px;
+	//padding-top: 15px;
+	//padding-bottom: 15px;
 	box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
 	-moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
 }
 
 ._shadow-all-pad {
 	padding: 15px;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+	-moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+
+._shadow-no-pad {
 	box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
 	-moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
 }
