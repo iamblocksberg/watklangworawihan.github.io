@@ -251,9 +251,11 @@ $schedule-height: 250px;
 	.-item {
 		//cursor: pointer;
 		margin-bottom: 25px;
+
 	}
 
 	.-shadow {
+		background-color: #fff;
 		padding: $img-padding;
 		@extend ._shadow-no-pad;
 	}
@@ -446,6 +448,8 @@ $schedule-height: 230px;
 
 //--Contact
 .box-contact {
+	background-color: #fff;
+
 	h3 {
 		margin-top: 0;
 	}
