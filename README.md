@@ -1,2 +1,1 @@
-# watklang.github.io
-Wat Klang Worawihan Website.
+# Wat Klang Worawihan Website
